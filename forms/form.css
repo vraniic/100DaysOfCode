@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+   box-sizing: border-box; 
+}
+form {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+    align-items: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    left: 40%;
+    
+}
+
