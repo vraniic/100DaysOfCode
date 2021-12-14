@@ -1,0 +1,5 @@
+1. sta je AJAX? - Aswqa, synchronous Javascript And Xml.
+2. AJAX je oudatovan ali se i dalje koristi za radnje (slanje http rikvestova) u pozadini kako ne bi dolazilo do reloadovanja cele stranice nego bi se to desavalo dok smo mi na stranici
+3. XML data format da bi napisali neki tekst i onda bi masine i server mogli lakse da razmeju nas kod
+4.  XML mozemo pisat kako god i mozemo koirsti koje god tagove ocemo odkle god m enzamo sa znace
+5. JSOM 
