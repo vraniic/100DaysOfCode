@@ -23,9 +23,12 @@ router.post('/signup', async function (req, res) {
   const enteredConfrimEmail = userData['confirm-email']
   const enteredPassword = userData.password;
 
-  if (!enteredEmail || !enteredPassword || enteredConfrimEmail || enteredPassword < 6 || enteredEmail !== enteredConfrimEmail || !enteredEmail.includes('@')) {
+  if (!enteredEmail || !enteredPassword || enteredConfrimEmail || enteredPassword.trim() < 6 || enteredEmail !== enteredConfrimEmail || !enteredEmail.includes('@')) {
+    console.log('inccorect data')
     return res.redirect('/signup')
   }
+
+  const existingUser = await db.getDb.collection('users').findone({ email: enteredEmail })
 
 const hashedPassword = await bcrypt.hash(enteredPassword, 12);
 
@@ -61,6 +64,9 @@ router.post('/login', async function (req, res) {
 });
 
 router.get('/admin', function (req, res) {
+  if (!req.session.isAuthenticated){
+    return res.status401.render('401')
+  }
   res.render('admin');
 });
 
