@@ -16,7 +16,7 @@ app.post('/userStore', function(req, res) {
 
     existingUsers.push(userName)
     
-    fs.writeFileSync(filePath, stringify(existingUsers) )
+    fs.writeFileSync(filePath, JSONstringify(existingUsers) )
     
     
 })

@@ -1,1 +1,13 @@
 ulrencoded gleda da li ima bilo kakve form data na sajtu i ako ima on ce je parsovati s
+
+fs, express, http, app, path
+
+app.post('/store-users', function(req, res) {
+    const userName = req.body.username
+    const filePath = path.join(__dirname, 'data', 'users.json')
+    const rawData = fs.readFileSync(filePath)
+    const existingUsers = JSON.parse(rawData)
+    existingUsers.push(userName)
+    const currentUsers = JSON.stringify(existingUsers)
+    fs.writeFuleSync(filePath. currentUsers)
+})
