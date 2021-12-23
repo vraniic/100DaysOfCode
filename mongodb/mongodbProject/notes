@@ -1,0 +1,2 @@
+ajax se koristi za salnje http rikveostova na browser-side javaScriptu
+preventing loading of a new page when we for eg post some comment we dont want for whole new page to be loaded.
