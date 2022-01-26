@@ -1,0 +1,11 @@
+
+a {
+    border: 2PX solid black;
+    display: flex;
+    height: 40px;
+}
+
+.jedan {
+    padding: 40px 0px;
+    width:200px auto   
+}
