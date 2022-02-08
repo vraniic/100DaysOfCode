@@ -1,0 +1,45 @@
+1. git status nam pokazuje sta smo pormeinli
+2. git add . je bolje koristiti od git add *: jer sa zvezdicom ignorise sve fajlove koji pocinju sa tackom 
+3. rm -f : ce removavati fajl
+mkdir = pravi nove fajlove
+touch FILE1 = bi napravilo noci prazan fajl1 
+git init - pravi empty repository 
+git add - dodaje promenje fajlove unutar vec napravljenog repositorija
+git branch pravi, brise
+git checkout i onda ID od brancha u koji zelimo da odemo 
+git log prikazuje hronolsoku istoriju repozitorija 
+4. git branches are way to create separate decelopment paths without overriding or creating copies of your project
+5. bracnhes can be added deleted and merged just like regular commits.
+6. you can set different end goals neki sluze za releasing neki za popravljanje bagova
+git add . 
+git commit -m "message"
+git push origin master
+
+git branch "ime brenca" 
+da bi se prebacili u noiv brenc potrevno je da napisemo git checkout "ime brenca"
+predjemo u glavni branc --> git merge <ime branca koji hocemo da mergujemo u glavni branch>
+
+
+CSS FLEXBOX mastering the basics
+flex-direction (main axios)
+flex wrap: da li ce se i sta ce se prebacivati u sledeci red u koliko se ekran  smanji previse
+flex flow: <flex direction> <flex wrap>; skraceni oblik da se napisu ova dva
+justify content:
+flex-grow: na koji item se stavi taj item zauzima ceo remaining space 
+flex basis je isto sto i widht i treba se koristiti umesto widtha
+
+ARRAYS
+
+isArray(<>) dobijamo informaciju da li je to nest oarray ili neki: false i truth
+indxOf(<trazena rec>) dobijemoi infomraicju na kojoj je poziciji trazena rec
+slice(), slice je metoda koja nam daju kopiju arrays, i moze imati u zagradi prvu variablu koja oznacava od kog indexa treba da se kopira i moze imati drugu variablu koja oznacava do kog indexa zelimo da kopiramo. u slucaju da nema nijednu variavlu navedenu tj. da je zagrada prazna onda znaci da dovbijamo
+
+.join() method nam omogucava da od arraya napravimo string. u zagradi bi trebalo da bude ono sta ocemo da sstavimo izmedju svake reci u aarrayu. znaci ako je u zagradi " ". imzejdu svake reci cemo dobiti razmak tj. dovicemo najobicniji string. ako stavimo "-" onda ce izmedju svake reci biti -. po defaultu je zarez stavljen "," (u slucaju prazne zgrade).
+
+.concat - spaja dve ili vise arrays together. znaci stavimo array1.concat(array2...) array1 ce biti prva napisana a na nju ce se nadovezati array2 kao i svkaa sledeca
+
+.reverese method nam omogucaba da 'obrnemo' array. tj. da nam poslednji clan nekog arraya bude pvi a prvi da bude poslednji
+
+.sort method se koritsi za sortiranje. mozemo dati nasu funckiju unutar te metode kako bi dobili zlejeno srotiranje. treba da passujemo nasu ffunckiju parametar unutar .sort(xxx)fgbhnm,console.log(array.isArray(,))
+
+SPLICE  se oristi za brisanje clanova arraya i stavlajnje novih na njigovo mesto. splice parametar nema ogranicen broj prihvacenih parametara koje mozemo da passujemo u zagrada, vec prvi parametar oznacava na kom indeksu treva da krene bursanje drugi parametar onzacava koliko borjeva treva da se izbrise (trajno) i treci i svaki sledeci parametar oznacaju clanove koji treva da se stave na mesto izvrisanih 
