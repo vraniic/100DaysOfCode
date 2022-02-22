@@ -1,32 +1,31 @@
-const express = require('express')
+let victimNames = [];
+let victimPhones = [];
+let victimStreets = [];
+let volunteerNames = [];
+let volunteerPhones = [];
+let volunteerStreets = [];
 
-const app = express()
+let x = prompt('How many victims were there?')
 
-app.use(express.static('public'))
+let y = prompt('How many volunteers there are?')
 
-app.use(exrpess.urlencoded({extended: false}))
-const path = require('path')
-const fs = require('fs')
+let victimsCount = parseInt(x)
+for (let i = 0; i < victimsCount; i++ ) {
+    victimNames.push(prompt('please enter the victims name:'))
+    victimPhones.push(prompt('please enter the victims phone:'))
+    victimStreets.push(prompt('please enter the victims street:'))
+}
 
-app.get('/question', function(req,res){
-    
-})
+let volunteersCount = parseInt(y)
+for (let i = 0; i < volunteersCount; i++ ) {
+    volunteerNames.push(prompt('please enter the volunteers name:'))
+    volunteerPhones.push(prompt('please enter the volunteers phone:'))
+    volunteerStreets.push(prompt('please enter the volunteers street:'))
+}
 
-app.post('/question', function(req,res){
-    
-    const victimsName = req.body.victimsName
+// })
 
-    const path = path.join(__dirname, 'exercises', 'victims.json')
 
-    const rawData = fs.readFileSync(path)
-    const parsedData = JSON.parse(rawData)
-
-    parsedData.push(victimsName)
-
-    const jsonData = JSON.stringify(parsedData)
-    fs.writeFileSync(path, jsonData)
-
+// /JEBACU TE USTA AKO TE VIDIM JOS JEDNOM DA NISI NA RADNOM MEST
      
-
-
-})
+// - BOLE ME JAJE 

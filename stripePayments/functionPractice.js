@@ -185,6 +185,27 @@ function letterCapitalize(string) {
 letterCapitalize('ja sam viktor')
 
 
+
+// 
+// 
+// 
+// zadatak broj sest
+
+console.log();
+console.log('zadatak broj 4');
+
+
+function lastLetter (text) {
+    const array = text.split("")
+    console.log(array[array.length - 1])
+
+}
+
+lastLetter('mateja')
+
+lastLetter('otorinolaringologija')
+
+
 // 
 // 
 // 
@@ -227,43 +248,6 @@ primeNumbers(4)
 console.log();
 console.log('zadatak broj 4');
 
-const firstReverse = (string) => {
-    let array = string.split('')
-    array.reverse()
-    
-    console.log(array.join(''))
-}
-
-
-firstReverse('ecuVaGisupop')
-
-// 
-// 
-// 
-// zadatak broj sest
-
-console.log();
-console.log('zadatak broj 4');
-
-var palindrome = function(str) {
-	for(var i=0; i<str.length/2; i++) {
-		if(str[i] !== str[str.length-1-i]) {
-			return false;
-		}
-	}
-	return true;
-}
-
-palindrome('anavolimilovana')
-
-// 
-// 
-// 
-// zadatak broj sest
-
-console.log();
-console.log('zadatak broj 4');
-
 function vowels (string) {
     let array = [] 
     for (let i = 0; i < string.length; i++) {
@@ -278,4 +262,136 @@ function vowels (string) {
     console.log(array)
 }
 
-vowels ('What lets in youth?')
+vowels ('IzvadiceSampoglasnike')
+
+
+// 
+// 
+// 
+// zadatak broj sest
+
+console.log();
+console.log('zadatak broj 4');
+
+const firstReverse = (string) => {
+    let array = string.split('')
+    array.reverse()
+    
+    console.log(array.join(''))
+}
+
+
+firstReverse('ecuVaGisupop')
+
+//  
+// 
+// 
+// zadatak broj sest
+
+console.log();
+console.log('zadatak broj 4');
+function lastLetter (text) {
+    const array = text.split("")
+    console.log(array[array.length - 1])
+
+}
+
+lastLetter('mateja')
+
+lastLetter('otorinolaringologija')
+var palindrome = function(str) {
+	for(var i=0; i<str.length/2; i++) {
+		if(str[i] !== str[str.length-1-i]) {
+			return false;
+		}
+	}
+	return true;
+}
+
+palindrome('anavolimilovana')
+
+
+// 
+// 
+// 
+// zadatak broj sest
+
+console.log();
+console.log('zadatak broj 4');
+
+function getSeconds(minutes, seconds) {
+    let secondsV2 = seconds + minutes*60
+    console.log(secondsV2);
+}
+
+getSeconds(10, 80)
+
+
+
+// 
+// 
+// 
+// zadatak broj sest
+
+console.log();
+console.log('zadatak broj 4');
+
+
+function printObject(name, lastName) {
+    console.log(`first name: ${name}`)
+    console.log(`last name: ${lastName}`)
+}
+
+
+// 
+// 
+// 
+// zadatak broj sest
+
+console.log();
+console.log('zadatak broj 4'); 
+
+function caesarCipher (string) {
+    let cipherString = []
+    let normalAlphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ]
+    let cipherAlphabet = ['l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
+
+    for (let i = 0; i < normalAlphabet.length; i++) {
+        for (let j = 0; j < string.length; j++) {
+            
+
+            if (normalAlphabet[i] === string[j] ) {
+                cipherString.unshift(cipherAlphabet[i])
+            }
+        }
+    }
+    console.log(cipherString)
+
+}
+
+caesarCipher('matejaPeder')
+
+
+function stringReverse (string) {
+    
+    let array = string.split('').reverse()
+     console.log(array.join(""))
+}
+
+stringReverse('mateja')
+
+
+function dashInsert (numbers) { 
+    let numbersV2 = []
+    
+    for (let i = 0; i < numbers.length; i++) {
+        numbersV2.push(numbers[i])
+        if (numbers[i] % 2 === 1 && numbers[i+1] % 2 === 1) {
+            numbersV2.push('-')
+        }
+    }
+    console.log(numbersV2)
+} 
+
+dashInsert(5153546415)
+
